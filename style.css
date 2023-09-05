@@ -1,0 +1,116 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  min-height: 100vh;
+  font-family: "Lato", sans-serif;
+}
+.container {
+  min-width: 120rem;
+}
+
+.header-box {
+  width: 100%;
+  padding: 2rem 8rem;
+  border-bottom: 0.8rem solid #999999;
+}
+.header {
+  max-width: 75%;
+  padding: 4rem 5rem;
+  margin: 6rem auto;
+}
+
+.header__heading {
+  font-size: 3.2rem;
+  font-weight: 800;
+  margin-bottom: 4rem;
+}
+
+.header__para {
+  font-size: 2rem;
+  max-width: 40rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.mgb {
+  margin-bottom: 2rem;
+}
+span {
+  color: #009966;
+}
+.card-box {
+  width: 100%;
+  background-color: #666666;
+  padding: 4rem 8rem;
+}
+.card {
+  max-width: 75%;
+  background-color: #fff;
+  margin: 4rem auto;
+  border-bottom: 0.8rem solid #999999;
+}
+
+.card__label {
+  display: inline-block;
+  font-size: 2.4rem;
+  font-weight: 800;
+  padding: 1rem 5rem;
+  margin: 1rem 0 0 -1rem;
+  background-color: #ffbf00;
+  border-bottom: 0.8rem solid #cc9900;
+}
+
+.card__para {
+  font-size: 2rem;
+  padding: 2rem 4rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+@media (max-width: 48em) {
+  html {
+    font-size: 50%;
+  }
+  .container {
+    min-width: 100%;
+  }
+  .header-box,
+  .card-box {
+    padding: 4rem 0;
+  }
+  .header,
+  .card {
+    max-width: 100%;
+    margin: 4rem 0;
+    padding: 4rem 0;
+  }
+  .header {
+    padding: 0 4rem;
+  }
+  .card__para {
+    width: 100%;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 25rem) {
+  html {
+    font-size: 62.5%;
+  }
+  .header-box,
+  .card-box {
+    padding: 8rem 0;
+  }
+  .header,
+  .card {
+    margin: 8rem 0;
+  }
+}
